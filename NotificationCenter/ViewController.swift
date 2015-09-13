@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let submitNotification = "submitNotification"
+    let destination = Destination()
+    
+    @IBOutlet weak var successLabel: UILabel!
+    
+    @IBAction func submitAction(sender: UIButton) {
+        NSNotificationCenter.defaultCenter().postNotificationName(submitNotification, object: nil)
+    }
+    
+    func showSuccessLabel() {
+        successLabel.text = "I got notification in source class."
+        successLabel.alpha = 1.0
+        UIView.animateWithDuration(2.0, animations: { () -> Void in
+            self.successLabel.alpha = 0.0
+        })
+    }
+    
+    func didReceiveSubmitNotification(notification: NSNotification) {
+        showSuccessLabel()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceiveSubmitNotification:", name: submitNotification, object: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

@@ -13,6 +13,7 @@
 		29745AA51BA4DE0D002BB2D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29745AA41BA4DE0D002BB2D0 /* Images.xcassets */; };
 		29745AA81BA4DE0D002BB2D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29745AA61BA4DE0D002BB2D0 /* LaunchScreen.xib */; };
 		29745AB41BA4DE0D002BB2D0 /* NotificationCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29745AB31BA4DE0D002BB2D0 /* NotificationCenterTests.swift */; };
+		29745AC01BA4DEC2002BB2D0 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29745ABF1BA4DEC2002BB2D0 /* Destination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		29745AAD1BA4DE0D002BB2D0 /* NotificationCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29745AB21BA4DE0D002BB2D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29745AB31BA4DE0D002BB2D0 /* NotificationCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterTests.swift; sourceTree = "<group>"; };
+		29745ABF1BA4DEC2002BB2D0 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,7 @@
 		29745A9A1BA4DE0D002BB2D0 /* NotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
-				29745A9D1BA4DE0D002BB2D0 /* AppDelegate.swift */,
+				29745ABF1BA4DEC2002BB2D0 /* Destination.swift */,
 				29745A9F1BA4DE0D002BB2D0 /* ViewController.swift */,
 				29745AA11BA4DE0D002BB2D0 /* Main.storyboard */,
 				29745AA41BA4DE0D002BB2D0 /* Images.xcassets */,
@@ -90,6 +92,7 @@
 		29745A9B1BA4DE0D002BB2D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				29745A9D1BA4DE0D002BB2D0 /* AppDelegate.swift */,
 				29745A9C1BA4DE0D002BB2D0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -214,6 +217,7 @@
 			files = (
 				29745AA01BA4DE0D002BB2D0 /* ViewController.swift in Sources */,
 				29745A9E1BA4DE0D002BB2D0 /* AppDelegate.swift in Sources */,
+				29745AC01BA4DEC2002BB2D0 /* Destination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				29745AB91BA4DE0D002BB2D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29745ABA1BA4DE0D002BB2D0 /* Build configuration list for PBXNativeTarget "NotificationCenterTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				29745ABC1BA4DE0D002BB2D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
